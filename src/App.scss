@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.blur-background {
+  background-color: rgba(145, 138, 135, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.login-popup {
+  animation: fadeInAnimation ease-in 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    scale: 0.3;
+    opacity: 0;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.colored-toast.swal2-icon-error {
+  background-color: #f27474 !important;
+}
+
+.colored-toast.swal2-icon-success {
+  background-color: #a5dc86 !important;
+}
+
+.colored-toast.swal2-icon-warning {
+  background-color: #f8bb86 !important;
+}
+
+.colored-toast.swal2-icon-info {
+  background-color: #3fc3ee !important;
+}
+
+.swal2-popup {
+  font-size: 0.5rem;
+}
+
+.about-dish-animation {
+  animation: popUp 0.5s;
+
+  @keyframes popUp {
+    from {
+      transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg)
+        scale(0.9, 0.9);
+    }
+    to {
+      transform: translate3d(0px, 0px, -250px);
+    }
+  }
+}
+
+.order-placed-effect {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate((-10deg));
+  }
+  80% {
+    transform: rotate((5deg));
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.dish-added-effect {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.shadow-effect {
+  box-shadow: 0 6px 5px 2px rgba(0 0 0 / 0.35),
+    0 -32px 45px 25px rgba(256 256 256 / 1);
+}
+
+.swal2-popup {
+  font-size: 0.8rem !important;
+  font-family: Georgia, serif;
+}

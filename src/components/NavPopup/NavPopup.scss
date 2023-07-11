@@ -1,0 +1,25 @@
+$color_black: black;
+$color_teal: #25ca80;
+$color_red: rgb(255, 0, 0);
+
+.profile-hover {
+  &:hover {
+    .profile-icon {
+      color: $color_black;
+    }
+    .profile-text {
+      color: $color_teal;
+    }
+  }
+}
+
+.logout-hover {
+  &:hover {
+    .logout-icon {
+      color: $color_red;
+    }
+    .logout-text {
+      color: $color_teal;
+    }
+  }
+}

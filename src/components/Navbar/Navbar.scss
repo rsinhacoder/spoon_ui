@@ -1,0 +1,6 @@
+.hover-icons {
+  &:hover {
+    filter: invert(82%) sepia(0%) saturate(4364%) hue-rotate(60deg)
+      brightness(99%) contrast(90%);
+  }
+}
