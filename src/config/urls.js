@@ -1,4 +1,4 @@
-const domainName = "http://52.87.192.153:4000"
+const domainName = "http://35.174.163.245:4000"
 
 export const urls = {
   forgetPassword: `${domainName}/user/forget-password`,
